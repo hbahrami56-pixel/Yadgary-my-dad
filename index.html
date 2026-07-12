@@ -2,42 +2,135 @@
 <html lang="fa" dir="rtl">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>یادبود</title>
+
 <style>
 body{
+margin:0;
 font-family:tahoma;
-max-width:700px;
-margin:auto;
-padding:20px;
+background:linear-gradient(#f8f4ef,#e8dfd4);
 text-align:center;
-background:#f5f5f5;
+color:#333;
 }
-img{
-width:250px;
-border-radius:10px;
+
+header{
+padding:40px 20px;
 }
+
+.photo{
+width:220px;
+height:220px;
+border-radius:50%;
+border:6px solid #d4af37;
+box-shadow:0 0 25px rgba(0,0,0,.3);
+object-fit:cover;
+}
+
+h1{
+margin-top:20px;
+font-size:34px;
+color:#6b4f1d;
+}
+
+p{
+font-size:18px;
+line-height:2;
+padding:0 20px;
+}
+
+.card{
+background:white;
+margin:25px;
+padding:25px;
+border-radius:20px;
+box-shadow:0 0 20px rgba(0,0,0,.15);
+}
+
 video{
 width:100%;
+border-radius:15px;
+}
+
+.button{
+display:inline-block;
+padding:15px 35px;
+background:#b8860b;
+color:white;
+text-decoration:none;
+border-radius:40px;
+font-size:20px;
 margin-top:20px;
 }
+
+footer{
+margin-top:40px;
+padding:25px;
+background:#6b4f1d;
+color:white;
+}
+
+.fade{
+animation:fade 2s;
+}
+
+@keyframes fade{
+from{opacity:0;}
+to{opacity:1;}
+}
 </style>
+
 </head>
 
 <body>
 
-<h1>🕊️ یادبود</h1>
+<header class="fade">
 
-<img src="photo.jpg">
+<img src="photo.jpg" class="photo">
 
-<h2>زنده‌یاد عباس میرزه بهرامی</h2>
+<h1>زنده‌یاد عباس میرزه بهرامی</h1>
 
 <p>
-یادش همیشه در قلب ما زنده است.
+یادش همیشه در قلب ما زنده خواهد ماند
 </p>
+
+</header>
+
+<div class="card">
+
+<h2>🎥 فیلم یادبود</h2>
 
 <video controls>
 <source src="video.mp4" type="video/mp4">
 </video>
+
+</div>
+
+<div class="card">
+
+<h2>🕊️ زندگی‌نامه</h2>
+
+<p>
+اینجا زندگی‌نامه، خاطرات و پیام خانواده نوشته می‌شود.
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>🤲 فاتحه</h2>
+
+<p>
+اللهم اغفر له وارحمه واسکنه فسیح جناتک
+</p>
+
+</div>
+
+<footer>
+
+🌹 برای شادی روح ایشان فاتحه‌ای قرائت فرمایید.
+
+</footer>
 
 </body>
 </html>
